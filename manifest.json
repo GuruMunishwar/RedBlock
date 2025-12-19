@@ -1,0 +1,30 @@
+
+{
+  "manifest_version": 3,
+  "name": "ReddBlock - AI Reddit Filter",
+  "version": "1.0.0",
+  "description": "Block Reddit content by keywords using AI suggestions.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open ReddBlock Manager"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.reddit.com/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "https://picsum.photos/16/16",
+    "48": "https://picsum.photos/48/48",
+    "128": "https://picsum.photos/128/128"
+  }
+}

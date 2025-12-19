@@ -1,0 +1,5 @@
+{
+  "name": "ReddBlock - Advanced Reddit Feed Filter",
+  "description": "A powerful React-based dashboard for managing Reddit content filters with AI-powered keyword generation.",
+  "requestFramePermissions": []
+}
